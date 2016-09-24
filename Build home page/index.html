@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Build Site</title>
+<link rel="stylesheet" type="text/css" href="styles/stylemain.css"> 
+<link rel="stylesheet" type="text/css" href="slick/slick.css"> 
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"> 
+<script  src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/lodash.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+<body>
+	<div id="outer_wrapper">
+
+	<!--START OF HEADER-->
+
+		<header class="inner_wrapper" id="header">
+			<div class="f_left" id="logo_wrap">
+				<img src="img/build_home_logo.jpg" alt="build home logo">
+			</div>
+			<div class="f_right social_media_icons horizontal-nav">
+				<ul>
+				 	<li><a id="facebook"></a></li>
+				 	<li><a id="twitter"></a></li>
+				 	<li><a id="waves"></a></li>
+				 	<li><a id="linkedin"></a></li>
+				 	<li><a id="skype"></a></li>
+
+				</ul>
+			</div>
+		</header>
+
+	<!--END OF HEADER-->
+
+	<!--START OF NAV-->
+
+		<nav class="inner_wrapper f_left horizontal-nav" id="main_nav">
+			<ul class="inner_wrapper">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">FEATURES</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">SHOP</a></li>
+
+			</ul>
+			<div class="f_right" id="search_div">
+				<form action="#" method="GET">
+					<input type="text" name="search" value="    search...." id="search_input">
+					<input type="submit" value="" id="spyglass_submit">
+
+				</form>
+			</div>
+		</nav>
+
+	<!--END OF NAV-->
+
+	<!--START OF SLIDER-->
+		<section class="inner_wrapper slider_class" id="slider">
+			
+				<div><img src="img/sliderMain.jpg" alt="Industrial scene"></div>
+				<div><img src="img/sliderMain.jpg" alt="Industrial scene"></div>
+				<div><img src="img/sliderMain.jpg" alt="Industrial scene"></div>
+
+		</section>
+
+	<!--END OF SLIDER-->
+
+	<!--START OF TEASER PANEL-->
+		<section class="inner_wrapper" id="teaser_panel">
+			<div id="teaser_panel_wrap">
+				<div class="f_left panel" id="panel_1">
+
+					<div class="f_left panel_number">
+						<p>01</p>
+					</div>
+
+					<div class="f_left panel_description">
+
+						<div class="panel_picture" id="power_inside">
+						</div>
+
+						<div class="f_left panel_header">
+							<h6>Power Inside</h6>
+						</div>
+
+						<div class="f_left panel_text">
+							<p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo.</p>
+						</div>
+
+						<div class="f_left read_more">
+							<p>Read More</p>
+						</div>
+
+
+					
+					</div>
+
+				</div>
+
+				<div class="f_left panel" id="panel_2">
+
+					<div class="f_left panel_number">
+						<p>02</p>
+					</div>
+
+					<div class="f_left panel_description">
+
+						<div class="panel_picture" id="new_technologies">
+						</div>
+
+						<div class="f_left panel_header">
+							<h6>New Technologies</h6>
+						</div>
+
+						<div class="f_left panel_text">
+							<p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo.</p>
+						</div>
+
+						<div class="f_left read_more">
+							<p>Read More</p>
+						</div>
+
+
+
+
+					</div>
+
+				</div>
+ 
+				<div class="f_left panel" id="panel_3">
+
+					<div class="f_left panel_number">
+						<p>03</p>
+					</div>
+
+					<div class="f_left panel_description">
+
+						<div class="panel_picture" id="fast_support">
+						</div>
+
+						<div class="f_left panel_header">
+							<h6>Fast Support</h6>
+						</div>
+
+						<div class="f_left panel_text">
+							<p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo.</p>
+						</div>
+
+						<div class="f_left read_more">
+							<p>Read More</p>
+						</div>
+
+
+					
+					</div>
+
+				</div>
+
+		
+
+			</div>
+		</section>
+
+	<!--END OF TEASER PANEL-->
+
+	<!--START OF SERVICES SECTION-->
+
+		<section class="clearfix" id="services_section">
+			<div class="inner_wrapper">
+				<div id="services_panel_wrap">
+
+					<div id="services_header">
+						<h6>Our Services</h6>
+					</div> 
+
+					<div class="f_left" id="fig_container">
+
+						<figure class="f_left services_fig" id="schedule_services_square">
+
+							
+							<a 	href="#" class="darken"><img src="img/hardhatSquare.jpg" alt="hardhat guy"></a>
+						
+							<p><a href="#" class="service_link">Schedule Services</a></p>
+						</figure>
+
+						<figure class="f_left services_fig" id="preventive_maintenance_square">
+
+							
+							<a href="#" class="darken"><img src="img/truckSq.jpg" alt="big truck"></a>
+							
+
+							<p><a href="#" class="service_link">Preventive Maintenance</a></p>
+						</figure>
+
+						<figure class="f_left services_fig" id="tire_wheel_square">
+
+							<a href="#" class="darken"><img src="img/pipeSq.jpg" alt="lots of pipes"></a>
+							
+
+							<p><a href="#" class="service_link">Tire & Wheel Services</a></p>
+						</figure>
+
+						<figure class="f_left services_fig" id="repair_services_square">
+
+							<a href="#" class="darken"><img src="img/tubeSq.jpg" alt="yellow tubes"></a>
+							
+
+							<p><a href="#" class="service_link">Repair Services</a></p>
+						</figure>
+
+					</div>
+				</div>
+		</section>
+
+	<!--END OF SERVICES SECTION-->
+		
+	<!--START OF NEWS AND BANNERS-->
+
+		<section id="news_and_banners">
+			<div class="inner_wrapper" id="news_and_banners_wrap">
+				<div class="f_left news_and_banners_panel" id="latest news">
+					<div class="services_panel_header">
+						<h6>Latest News</h6>
+					</div>
+
+					<div class="clearfix news_box" id="top_box">
+
+						<div class="f_left pic_outer">
+							<img src="img/top_news_timestamp.png" alt="time stamp" class="timestamp">
+							<div class="pic_inner">
+								<img src="img/compass.jpg" alt="compass">
+							</div>
+						</div>
+
+						<div class="f_left news_box_text_wrap">
+
+							<div class="news_box_head">
+								<p><a href="#" class="news_box_header">Advanced Machinery Helps Improve Quality</a></p>
+							</div>
+
+							<div class="news_box_comments">
+								<p>by <span class="author">cmsmasters</span>  Comments(<span class="author">6</span>)</p>
+							</div>
+
+							<div class="f_left news_box_description">
+								<p class="news_box_description_text">Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo.</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="clearfix news_box" id="bottom_box">
+
+						<div class="f_left pic_outer">
+							<img src="img/top_news_timestamp.png" alt="time stamp" class="timestamp">
+							<div class="pic_inner">
+								<img src="img/hardhatMan.jpg" alt="guy in hard hat">
+							</div>
+						</div>
+
+						<div class="f_left news_box_text_wrap">
+
+							<div class="news_box_head">
+								<p><a href="#" class="news_box_header">Powerful Techniques for Advanced Service</a></p>
+							</div>
+							<div class="news_box_comments">
+								<p>by <span class="author">cmsmasters</span>  Comments(<span class="author">3</span>)</p>
+							</div>
+							<div class="f_left news_box_description">
+								<p class="news_box_description_text">Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo.</p>
+							</div>
+						</div>
+					</div>
+					
+
+
+				</div>
+
+				<div class="f_left news_and_banners_panel" id="banners_place">
+					<div class="services_panel_header">
+						<h6>Banners Place</h6>
+					</div>
+					<div id="accordion">
+						<h3 class="accordion_header">ACCORDION PANEL 1</h3>
+						<div>
+							<p class="accordion_text">Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus.</p>
+						</div>
+						<h3 class="accordion_header">ACCORDION PANEL 2</h3>
+						<div>
+							<p class="accordion_text">Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus.</p>
+						</div>
+
+						<h3 class="accordion_header">ACCORDION PANEL 3</h3>
+						<div>
+							<p class="accordion_text">Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus.</p>
+						</div>
+
+						<h3 class="accordion_header">ACCORDION PANEL 4</h3>
+						<div>
+							<p class="accordion_text">Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!--END OF NEWS AND BANNERS-->
+
+	<!--SPONSORS SECTION BEGINS-->
+		<section id="sponsors_section">
+			<div class="inner_wrapper" id="sponsors_section_inner">
+				<img src="img/sponsors.jpg" alt="sponsor logos">
+			</div>
+		</section>
+
+
+
+	<!--SPONSORS SECTION ENDS-->
+
+	<!--BOTTOM MENU BEGINS-->
+
+		<section id="bottom_menu_section">
+			<div class="inner_wrapper" id="bottom_menu_wrap">
+				<div class="f_left bottom_menu_panel" id="social_media">
+					<div class="menu_head">
+						<h6>SOCIALS</h6>
+					</div>
+					<div class="bottom_menu_list_wrap vertical-nav">
+						<ul class="bottom_menu">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Flickr</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Vimeo</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_left bottom_menu_panel" id="links">
+					<div class="menu_head">
+						<h6>LINKS</h6>
+					</div>
+					<div class="bottom_menu_list_wrap vertical-nav">
+						<ul class="bottom_menu">
+							<li><a href="#">How to Write a Blog</a></li>
+							<li><a href="#">Create a Blog in 4 Steps</a></li>
+							<li><a href="#">15 Tips to Increase Traffic</a></li>
+							<li><a href="#">20 Blog Post Ideas</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_left bottom_menu_panel" id="blogroll">
+					<div class="menu_head">
+						<h6>BLOGROLL</h6>
+					</div>
+					<div class="bottom_menu_list_wrap vertical-nav">
+						<ul class="bottom_menu">
+							<li><a href="#">Blogs Blog</a></li>
+							<li><a href="#">Roll Up Roll Up</a></li>
+							<li><a href="#">Blog Free</a></li>
+							<li><a href="#">Wordpress Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_left bottom_menu_panel" id="about_us">
+					<div class="menu_head">
+						<h6>About Us</h6>
+					</div>
+					<div class="bottom_menu_list_wrap vertical-nav">
+						<ul class="bottom_menu">
+							<li><a href="#">Agriculture</a></li>
+							<li><a href="#">Harvest</a></li>
+							<li><a href="#">Company news</a></li>
+							<li><a href="#">Investor relations</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+			</div>
+		</section>
+
+
+
+	<!--BOTTOM MENU ENDS-->
+
+	<!--FOOTER BEGINS -->
+		<footer id=footer>
+			<div class="inner_wrapper" id="footer_inner_wrapper">
+				<ul class="horizontal-nav" id="contact_details">
+					<li class="f_left contact_li" id="street"><div class="f_left contact_background" id="location"></div><p>BuildHomeLTD. Street Name 123 2345 Cityname</p></li>
+					<li class="f_left contact_li" id="phone"><div class="f_left contact_background" id="phone"></div><p>+123 900 123 456</p></li>
+					<li class="f_left contact_li" id="web"><div class="f_left contact_background" id="email"></div><p>info@buildhome.web</p></li>
+					<li class="f_right contact_li" id="copyright"><p>&copy 2014 Build Home</p></li>
+
+				</ul>
+			</div>
+		</footer>
+
+	<!--FOOTER ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>
