@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-r-webfont.woff2") format("woff2"), url("../fonts/ubuntu-r-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntubold';
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.f_right {
+  float: right; }
+
+.f_left {
+  float: left; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.m_left {
+  margin-left: 10px; }
+
+.horizontal-nav ul {
+  list-style-type: none; }
+.horizontal-nav li {
+  display: inline-block; }
+.horizontal-nav a {
+  text-decoration: none;
+  display: block; }
+
+.vertical-nav ul {
+  list-style-type: none; }
+.vertical-nav li {
+  display: block; }
+.vertical-nav a {
+  text-decoration: none;
+  display: block; }
+
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+#outer_wrapper {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden; }
+
+.inner_wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0px auto;
+  overflow: hidden; }
+
+#header {
+  overflow: hidden; }
+
+#logo_wrap {
+  padding: 10px; }
+
+.social_media_icons {
+  padding: 25px 0; }
+
+.social_media_icons li {
+  padding: 0px 4px; }
+
+.social_media_icons a {
+  display: block;
+  height: 16px;
+  width: 20px;
+  background-image: url(../img/social_media_sprite.png); }
+
+#facebook {
+  background-position: 0px 0px; }
+
+#twitter {
+  background-position: -20px 0; }
+
+#waves {
+  background-position: -40px 0; }
+
+#linkedin {
+  background-position: -60px 0; }
+
+#skype {
+  background-position: -80px 0; }
+
+#main_nav {
+  width: 92%;
+  margin: 15px 0 0 53px;
+  background-color: #2a2d32; }
+
+#main_nav li {
+  border-left: 1px solid #181a1d;
+  border-right: 1px solid #181a1d; }
+
+#main_nav a:first-child {
+  margin-left: -1px; }
+
+#main_nav a {
+  font-family: ubuntu;
+  font-size: 14px;
+  margin-right: -4px;
+  color: white;
+  background-color: #2a2d32;
+  padding: 20px 34px; }
+
+#main_nav ul:nth-child(even) {
+  border-style: none; }
+
+#main_nav a:hover {
+  color: #9e7923;
+  background-color: #248cec; }
+
+#search_div {
+  margin: -46px 7px 0 0px; }
+
+#search_input {
+  height: 35px;
+  width: 238px;
+  border: 1px solid #181a1d;
+  background-color: #35383c;
+  color: #5d5f61; }
+
+#spyglass_submit {
+  background: none;
+  position: absolute;
+  margin-top: -24px;
+  margin-left: 210px;
+  width: 18px;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url(../img/search.png); }
+
+#spyglass_submit:active {
+  border: none; }
+
+#slider {
+  margin: 110px 0 0 52px;
+  overflow: hidden; }
+
+#teaser_panel {
+  overflow: hidden;
+  margin-top: 46px; }
+
+.panel {
+  width: 34%;
+  overflow: hidden; }
+
+.panel:last-child {
+  width: 32%; }
+
+.panel_number {
+  font-family: ubuntubold;
+  color: #efefef;
+  font-size: 90px; }
+
+.panel_description {
+  width: 60%;
+  margin: 18px 0 0 26px; }
+
+.panel_header, .read_more {
+  font-family: ubuntu;
+  color: black;
+  font-size: 30px;
+  margin: 10px 0px 0px -1px; }
+
+.panel_text {
+  font-family: ubuntu;
+  color: #8a8a8a;
+  font-size: 13px;
+  padding-top: 20px; }
+
+.read_more {
+  width: 100%;
+  font-size: 13px;
+  background-image: url(../img/read_more_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 70px 5px; }
+
+.read_more:hover {
+  color: #248cec; }
+
+.panel_picture {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/panel_sprite.png);
+  background-repeat: no-repeat; }
+
+#power_inside {
+  background-position: -7px 0; }
+
+#new_technologies {
+  background-position: -55px 0; }
+
+#fast_support {
+  background-position: -100px 0; }
+
+#services_section {
+  background-color: #2a2d32;
+  width: 100%;
+  overflow: visible;
+  margin-top: 73px;
+  padding: 42px 0 67px; }
+
+#services_panel_wrap {
+  padding-left: 5px; }
+
+#services_header {
+  font-family: ubuntu;
+  color: white;
+  font-size: 37px; }
+
+.services_fig {
+  overflow: hidden;
+  width: 26%;
+  padding-right: 30px;
+  padding-top: 51px; }
+
+.services_fig:last-child {
+  width: 22%; }
+
+.services_fig p {
+  text-align: center;
+  padding-top: 26px; }
+
+.service_link {
+  text-decoration: none;
+  font-family: ubuntu;
+  color: white;
+  font-size: 16px; }
+
+.service_link:hover, .on {
+  color: #9e7923;
+  font-family: ubuntu;
+  text-decoration: none;
+  font-size: 16px; }
+
+a.darken {
+  display: inline-block;
+  background: #248cec;
+  padding: 0;
+  background-image: url(../img/active_cross.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+a.darken img {
+  display: block; }
+
+#news_and_banners {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f7f7f7; }
+
+#news_and_banners_wrap {
+  margin: 60px 0 78px 56px; }
+
+.news_and_banners_panel {
+  width: 50%;
+  overflow: hidden; }
+
+.services_panel_header h6 {
+  font-family: ubuntu;
+  color: black;
+  font-size: 25px;
+  padding-left: 8px; }
+
+.news_box {
+  padding-top: 45px; }
+
+.news_box:last-child {
+  padding-top: 26px; }
+
+.timestamp {
+  position: absolute;
+  margin: 12px 0 0 -16px; }
+
+.pic_outer {
+  width: 30%; }
+
+.news_box_text_wrap {
+  width: 60%;
+  padding-left: 8px; }
+
+.news_box_header {
+  font-family: ubuntubold;
+  color: black;
+  text-decoration: none;
+  font-size: 16px; }
+
+.news_box_header:hover {
+  color: #248cec; }
+
+.news_box_comments {
+  padding-top: 5px; }
+
+.news_box_description {
+  padding-top: 22px; }
+
+.news_box_comments p, .news_box_description_text {
+  font-family: ubuntu;
+  font-size: 14px;
+  color: #8a8a8a; }
+
+.author {
+  color: #248cec; }
+
+#accordion {
+  margin: 40px 0 0 16px; }
+
+.accordion_header {
+  font-family: ubuntu;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  padding: 10px 0;
+  margin-bottom: 3px;
+  text-decoration: none;
+  outline: none; }
+
+.border {
+  width: 1px;
+  height: 100%;
+  border: 1px solid black; }
+
+.ui-accordion-header-active, .ui-state-active {
+  background-color: #f4b60d;
+  color: white; }
+
+.accordion_cross {
+  background-image: url(../img/accordion_cross.png);
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-repeat: no-repeat;
+  margin: 0 12px; }
+
+.accordion_cross_active {
+  background-image: url(../img/accordion_flat.png);
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-repeat: no-repeat;
+  margin: -5px 12px; }
+
+.accordion_text {
+  font-family: ubuntu;
+  font-size: 14px;
+  color: #8a8a8a;
+  padding: 20px 35px; }
+
+#sponsors_section {
+  width: 100%;
+  background-color: white;
+  overflow: hidden; }
+
+#sponsors_section_inner {
+  padding: 88px 0 84px 10px; }
+
+#bottom_menu_section {
+  width: 100%;
+  background-color: #2a2d32;
+  overflow: hidden; }
+
+#bottom_menu_wrap {
+  padding: 60px 0 68px 7px; }
+
+.bottom_menu_list_wrap {
+  padding-top: 37px; }
+
+.menu_head {
+  font-family: TimesNewRoman;
+  font-size: 24px;
+  color: #f4b60d; }
+
+.bottom_menu_panel {
+  width: 26%; }
+
+.bottom_menu_panel:last-child {
+  width: 22%; }
+
+.bottom_menu a {
+  font-family: TimesNewRoman;
+  font-size: 14px;
+  color: #7d6229;
+  padding: 9px 0;
+  border-bottom: 1px solid #393c40;
+  width: 80%; }
+
+.bottom_menu a:hover {
+  color: #f4b60d; }
+
+#footer {
+  background-color: #35383c;
+  overflow: hidden; }
+
+#footer_inner_wrapper {
+  padding: 20px 0 30px 4px; }
+
+.contact_li {
+  font-family: TimesNewRoman;
+  color: #7d6229;
+  font-size: 12px;
+  width: 28%; }
+
+.contact_li:nth-child(2) {
+  width: 14%; }
+
+.contact_background {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../img/contact_sprite.png); }
+
+#street {
+  background-position: 0 0; }
+
+#phone {
+  background-position: 41px 0; }
+
+#email {
+  background-position: 21px 0; }
+
+#copyright {
+  width: 100px; }
+
+.contact_li p {
+  margin-top: 2px; }
+
+/*# sourceMappingURL=stylemain.css.map */

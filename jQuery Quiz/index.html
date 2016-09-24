@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JS Homework 11</title>
+	<script  src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>  
+	<script rel="text/javascript" src="js/template.js"></script>
+	<script rel="text/javascript" src="js/script.js"></script>
+	
+
+</head>
+<body>
+
+<div id="wrapper">
+	<section id='siteHead'>
+	</section>
+	<div id="test_form">
+		<script type="text/template" id="test">
+
+			<form id="jquery_test" action="#" method="post"> 
+
+			<% for (var i = 0; i < questions.length; i++) { %>
+						<h3><%= i+1 + '.' + ' ' + questions[i].question %></h3>
+					
+						<input type="radio" name= "question<%= [i + 1] %>"  id="<%= questions[i].options[0] %>" value= "<%= questions[i].options[0] %>"><%= questions[i].options[0] %></input><br>
+						<input type="radio" name= "question<%= [i + 1] %>" id="<%= questions[i].options[1] %>" value= "<%= questions[i].options[1] %>"><%= questions[i].options[1] %></input><br>
+						<input type="radio" name= "question<%= [i + 1] %>" id="<%= questions[i].options[2] %>" value= "<%= questions[i].options[2] %>"><%= questions[i].options[2] %></input>
+
+					
+					<% }; %>
+					<br><input id="submit" type=submit value="Check Your Answers"></input>
+			</form>
+		</script>
+	</div>
+	<div id="myModal" class="modal">
+		
+		<div class="modal-content">
+			<span class="close">x</span>
+			<p id="results">Modal Content</p>
+		
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>

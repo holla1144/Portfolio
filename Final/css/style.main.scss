@@ -1,0 +1,1045 @@
+//Palettes
+
+@import 'fonts';
+
+
+//Mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin break($size) {  
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+
+$breakpoints: (
+	phone: 320px,
+	tablet: 768px,
+	comp: 1440px
+	);
+
+
+$colors: (
+
+	hot-pink: rgb(255, 78, 80),
+	grey-text: rgb(140, 140, 140)
+
+	);
+
+
+$fonts: (
+
+	primary: montserratbold, //log in (14px), sign up (14px), sub-title (14px) main logo (20px), main title (52px), see other partners, partners (14px), section headings, picture captions, footer vert menu headings
+	montreg: montserratregular, //how it works subtext (10px; grey), partners subtext (14px),
+	robol: robotolight, //step (14px), partners subtext (14px),search for partners box, what are your interests? 
+	robold: robotobold, //How it works title (unknown)
+	times: Times New Roman,  //(partners hover (14px)), about vert menu, 
+
+
+
+	);
+
+
+
+//base classes
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+
+
+.f-right {
+
+	float: right;
+}
+
+.f-left {
+
+	float: left;
+}
+
+.clearfix:after {
+
+	visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+
+}
+
+.outer-wrap {
+
+	width: 100%;
+	margin: 0 auto; 
+	overflow: hidden; 
+
+
+}
+
+.inner-wrap {
+	width: 100%;
+	max-width: 960px; 
+	margin: 0% auto; 
+	overflow: hidden; 
+}
+
+
+
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+
+body {
+
+	width: 100%;
+	margin: 0 auto; 
+}
+
+.horizontal-nav {
+	
+	ul {
+
+		list-style-type: none; 
+	}
+
+	li {
+		display:inline;
+
+	}
+
+	a {
+
+		display: block; 
+
+	}
+}
+//HEADER 
+
+#header {
+	width: 100%; 
+	height: 700px; 
+	margin: 0px auto; 
+	background-image: url('../img/landing_pic.jpg'); 
+	background-repeat: no-repeat;
+    background-position: top center;
+    @include break(phone) {
+    	background-image: url('../img/landing_pic_mobile.jpg');
+    	height: 539px; 
+    }
+
+}
+
+#inner-header {
+	padding-top: 45px; 
+}
+
+.primary-text {
+	font-family: map-get($fonts, primary);
+	color: white; 
+ 
+}
+
+#company {
+	@include break(tablet){
+		margin: 4px 0px 0px 47px; 
+	}
+	@include break(phone) {
+		margin-top: 125px; 
+		margin-left: 58px;
+	}
+	
+}
+
+#company-text {
+	font-size: 22px;
+	@include break(phone) {
+		font-size: 21px; 
+	}
+
+}
+
+#signup {
+	margin: -8px 14px; 
+	@include break(tablet) {
+		margin: -5px 34px;
+	}
+	@include break(phone) {
+		position: absolute;
+    	margin: -26px 0px 0px 58px;
+	}
+}
+
+.cred-button {
+	font-size: 14px;
+	padding: 7px 16px; 
+	background: none;
+	border: none; 
+
+}
+
+#signin {
+	border: 2px solid white;
+	@include border-radius(18px);
+
+}
+
+#landing-message {
+	margin-top: 170px; 
+	margin-left: 50px; 
+	@include break(tablet) {
+		margin: 142px 0px 0px 135px; 		
+	}
+
+	@include break(phone) {
+		margin-top: 25px;
+    	margin-left: -30px;
+	}
+}
+
+.big-text {
+	font-size: 52px;
+	@include break(phone) {
+		font-size: 31px;
+	}
+}
+
+#line-1 {
+	padding-left: 76px; 
+}
+
+#line-2 {
+	@include break(phone) {
+		margin-left: 38px; 
+	}
+}
+
+#sub-title {
+	font-family: map-get($fonts, robol);
+	font-size: 24px; 
+	color: white; 
+	padding-top: 22px; 
+	padding-left: 44px; 
+	@include break(phone) {
+		margin: -20px 0px 0px 12px;
+    	width: 82%;
+    	text-align: center;
+		font-size: 18px; 
+	}
+}
+
+#find-partner {
+	margin: 32px 0px 0px 130px;
+	padding: 12px 23px; 
+	font-size: 14px;
+	background-color: map-get($colors, hot-pink);
+	border: none; 
+	@include border-radius(18px);
+	@include break(tablet) {
+		margin: 32px 0px 0px 134px;
+	}
+	@include break(phone) {
+		width: 282px;
+    	margin: 15px 0px 0px 40px;
+    	height: 38px;
+	}
+}
+
+.section-title {
+	@extend .primary-text; 
+	color: black; 
+	font-size: 22px; 
+
+}
+
+//HOW IT WORKS
+
+
+#how-it-works-section {
+	width: 100%; 
+}
+
+#how-it-works {
+	margin-top: 94px;
+	margin-left: 330px;
+	overflow:hidden;
+	@include break(tablet) {
+		margin: 97px 0px 0px 243px; 
+	}
+	@include break(phone) {
+		margin: 7px 0px 0px 33px; 
+	}
+}
+
+#slider-section {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 157px; 
+	margin-bottom: 10px;
+	@include break(phone) {
+		margin-top: 75px; 
+	}
+}
+
+
+.slide-wrap {
+	width: 32%;
+	padding-left: 4px; 
+	@include break(tablet) {
+		padding-left: 8px; 
+	}
+	@include break(phone) {
+		width: 100%;
+	}
+}
+
+.slider {
+	width: 100%;
+	padding: 1px; 
+	z-index: 0;
+}
+
+.slide-text {
+	width: 22%; 
+	min-width: 250px; 
+	position: absolute;
+    z-index: 10;
+    margin: 225px 0px 0px 20px;
+    max-height: 160px; 
+    @include break (tablet) {
+    	margin: 208px 0px 0px 22px;
+    }
+    @include break(phone) {
+    	margin: 68px 0px 0px 10px;
+
+    }
+}
+
+.slide-title {
+	@extend .primary-text;
+	padding-top: 18px;
+	font-size: 24px; 
+	width: 66%;
+	@include break(phone) {
+		width: 100%;
+	}
+
+}
+
+
+
+.step {
+	font-family: map-get($fonts, robol);
+	color: white;
+	font-size: 12px; 
+	padding: 1px 15px; 
+	background-color: map-get($colors, hot-pink);
+	width: 70px; 
+	height: 20px; 
+	@include border-radius(18px);
+}
+
+.slide-image {
+	height: 400px;
+	background-repeat: no-repeat;
+	@include break(phone) {
+		height: 0px; 
+	}
+}
+
+.slide-para-text {
+	padding-top: 10px;
+	color: map-get($colors, grey-text);
+	width: 99%;
+	max-width: 275px;
+    overflow: hidden;
+    max-height: 64px;
+	@include break(tablet) {
+		width: 76%;
+	}
+}
+
+#slide-wrap-1 {
+	@include break(phone) {
+		margin-left: -4px; 
+	}
+
+}
+
+#slide-text-1 {
+	@include break(phone) {
+		margin: 65px 0px 0px 20px;
+	}
+}
+#computer-hands{
+	background-image: url('../img/how_to_hands.jpg');
+	@include break(phone){
+		background-image: url('../img/how_to_hands_mobile.jpg');
+		height: 240px; 
+		margin-left: -7px; 
+	}
+
+}
+
+#slide-wrap-2 {
+	margin-left: 13px;
+	@include break(tablet) {
+		margin-left: 18px; 
+	}
+	@include break(phone) {
+		margin-left: -4px; 
+	}
+}
+
+#slide-text-2 {
+	padding-top: 33px;
+    width: 24%;
+    @include break(tablet) {
+    	padding-top: 46px;
+    	width: 38%;
+    }
+    @include break(phone) {
+    	margin: 52px 0px 0px 20px;
+    }
+}
+
+#slide-title-2 {
+	@include break(tablet) {
+		width: 70%;
+	}
+}
+
+#slide-2-para {
+	max-width: 245px;
+    overflow: hidden;
+    max-height: 60px;
+    @include break(phone) {
+    	max-height: 48px; 
+    }
+}
+
+#driver-hands{
+	background-image: url('../img/how_to_driver.jpg');
+	@include break(phone){
+		background-image: url('../img/how_to_driver_mobile.jpg');
+		height: 240px; 
+		margin: 7px 0px 0px -32px;
+	}
+}
+
+#slide-wrap-3 {	
+	margin-left: 10px;
+	padding-right: 1px;
+	@include break(tablet) {
+		margin-left: 13px; 
+		width: 31%; 
+	}
+	@include break(phone) {
+		width: 100%;
+		margin-left: -4px; 
+	}
+}
+
+
+#feet {
+	background-image: url('../img/how_to_feet.jpg');
+	@include break(phone) {
+		background-image: url('../img/how_to_feet_mobile.jpg');
+		height: 240px; 
+		margin: 7px 0px 0px -12px;
+	}
+}
+
+
+#slide-text-3 {
+	@include break(phone) {
+		margin: 74px 0px 0px 20px;
+	}
+}
+
+.place-holder-1 {
+	background-image: url('../img/adventure.jpg');
+	background-size: cover; 
+	@include break(phone) {
+		display: none;
+		background-image: none;
+	}
+}
+
+.place-holder-2 {
+	background-image: url('../img/extreme-sports.jpg');
+	background-size: cover; 
+	@include break(phone) {
+		display: none;
+		background-image: none;
+	}
+}
+
+.custom-arrow {
+	z-index:10; 
+	height: 56px; 
+	width: 36px;
+	background: none;
+	border: none;
+	position: absolute;
+
+
+}
+
+.custom-arrow-right {
+	margin-top: -246px;
+	margin-left: 83%;
+	background-image: url('../img/arrow_left.png');
+	background-repeat: no-repeat;
+	@include break(tablet) {
+		margin-top: -360px;
+    	margin-left: 80%;
+	}
+	@include break(phone){
+		background-image: none;
+		margin-left: 300px;
+	}
+}
+
+.custom-arrow-left {
+	margin: 150px 0px 0px 20px;   
+	background-image: url('../img/arrow_right.png');
+	background-repeat: no-repeat;
+	@include break(tablet) {
+		margin-top: 40px; 
+	}
+	@include break(phone){
+		background-image: none; 
+		
+	}
+}
+
+//END HOW IT WORKS
+
+//START OF PARTNERS
+
+#partners {
+	padding-bottom: 10px; 
+}
+
+#partners-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+#partner-title {
+	margin:80px 0px 0px 270px; 
+	@include break(tablet) {
+		margin: 84px 0px 0px 180px;
+	}
+	@include break(phone) {
+		margin: 22px 0px 0px -10px;
+    	text-align: center;
+	}
+
+}
+
+#partner-card-wrap {
+	overflow: hidden;
+	margin-top: 34px; 
+	margin-bottom: 10px; 
+	@include break(tablet) {
+		margin-left: 146px; 
+	}
+	@include break(phone) {
+		margin: 15px 0px 0px 47px; 
+	}
+}
+
+.card {
+	width: 25%;
+	padding-left: 18px; 
+	@include break(tablet){
+		width: 40%;
+	}
+	@include break(phone) {
+		width: 100%; 
+		padding-left: 0px; 
+	}
+}
+
+.card-name {
+	@extend .primary-text; 
+	color: black;
+	font-size: 14px; 
+	padding: 10px 0px 0px 48px; 
+
+}
+
+.card-image-image {
+	padding: 0% 17%;
+
+}
+
+.card-description {
+	width: 94%;
+	font-family: map-get($fonts, robotol);
+	color: map-get($colors, grey-text);
+	font-size: 15px;
+	padding: 13px 0px 0px 2px;
+	text-align: center;
+
+
+}
+
+#card-2 {
+	@include break(tablet) {
+		margin-left: 16px; 
+	}
+	@include break(phone) {
+		margin: 30px 0px 0px 0px;
+	}
+}
+
+#card-3, #card-4 {
+	@include break(tablet) {
+		padding-top: 52px; 
+	}
+	@include break(phone) {
+		padding-top: 0px;
+	}
+}
+
+#card-3 {
+	@include break(phone) {
+		margin-top: 54px; 
+	}
+}
+
+#card-4 {
+	@include break(tablet) {
+		margin-left: 18px; 
+	}
+	@include break(phone) {
+		margin: 10px 0px 0px 0px;
+	}
+}
+
+#see-button {
+	margin: 25px 0px 0px 378px;
+	@extend .primary-text;
+	font-size: 14px;
+	color: map-get($colors, hot-pink);
+	width: 192px; 
+	height: 38px; 
+	background: none; 
+	border-color: map-get($colors, hot-pink);
+	border: 2px solid;
+	@include border-radius(18px);
+	@include break(tablet) {
+		margin-left: 290px; 
+	}
+	@include break(phone) {
+		width: 282px;
+		margin-left: 9px;
+	}
+}
+
+
+//END OF PARTNERS
+
+//START OF DISCOVER HOLIDAY IDEAS
+
+#holiday-ideas-title {
+	margin: 87px 0px 0px 302px;
+	@include break(tablet) {
+		margin-left: 218px;
+	}
+	@include break(phone) {
+		margin: 25px 0px 0px 2px; 
+		text-align: center;
+	}
+}
+
+#grid-wrap {
+	margin-top: 32px;
+
+	@include break(tablet) {
+		margin-left: 10px; 
+	}
+	@include break(phone) {
+		margin-top: 12px; 
+
+
+	}
+}
+
+.grid-item {
+	float:left;
+	margin-left: 0%;
+	margin-bottom: 1%;
+	@extend .primary-text;
+	color: white; 
+	font-size: 22px;
+	background-size: cover; 
+	@include break(tablet) {
+		margin-bottom: 10px; 
+	}
+	@include break(phone) {
+		margin-bottom:8px; 
+	}
+}
+
+.grid-sizer{
+	width: 32%;
+	@include break(tablet) {
+		width: 20%;
+	}
+	@include break(phone) {
+		width: 100%;
+	}
+}
+
+.gutter-sizer{
+	width: 2%;
+	@include break(tablet) {
+		width: 2%;
+	}
+}
+
+.grid-item-1 {
+	width: 32%;
+	height: 310px;
+	overflow: hidden;
+	@include break(phone) {
+		width: 100%;
+		height: 120px;
+	}
+}
+
+.grid-item-2 {
+	width: 66%;
+	height: 310px; 
+	overflow: hidden;
+	@include break(phone) {
+		width: 100%;
+		height: 120px;
+	}
+
+}
+
+#sports-and-activity {
+	background-image: url('../img/sport-and-activity.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/sport-and-activity-mobile.jpg');
+
+	}
+}
+
+#wellness {
+	background-image: url('../img/wellness.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/wellness-mobile.jpg');
+	}
+}
+#extreme-sports {
+	background-image: url('../img/extreme-sports.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/extreme-sports-mobile.jpg');
+	}
+
+}
+
+#games {
+	background-image: url('../img/cards.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/cards-mobile.jpg');
+	}
+}
+
+
+#culture {
+	background-image: url('../img/history.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/history-mobile.jpg');
+	}
+
+}
+
+#relaxation {
+	background-image: url('../img/relaxation.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/relaxation-mobile.jpg');
+	}
+}
+
+#travelling {
+	background-image: url('../img/adventure.jpg');
+	background-repeat: no-repeat;
+	@include break(phone) {
+		background-image: url('../img/adventure-mobile.jpg');
+	}
+}
+
+.cap-1, .cap-2 {
+	position: absolute;
+	
+}
+
+
+
+.grid-item-3 {
+	width: 99%;
+}
+
+#cap-sport {
+	margin: 140px 0px 0px 52px; 
+	@include break(phone) {
+		margin-top: 40px;
+	}
+
+}
+
+#cap-wellness {
+	margin: 140px 0px 0px 47px;
+	@include break(phone) {
+		margin-top: 40px;
+	}
+
+
+}
+
+
+#cap-extreme {
+	margin: 128px 0px 0px 65px;
+    width: 59%;
+    @include break(phone) {
+		margin-top: 22px;
+		width: 61%;
+	}
+
+}
+
+#cap-games {
+	margin: 140px 0px 0px 113px;
+	@include break(phone) {
+		margin-top: 40px;
+	}
+
+}
+
+#cap-culture {
+	margin: 140px 0px 0px 188px;
+	@include break(phone) {
+		margin: 53px 0px 0px 25px;
+	}
+
+}
+
+#cap-relaxation {
+	margin: 140px 0px 0px 252px;
+	@include break(phone) {
+		margin: 60px 0px 0px 90px; 
+	}
+
+}
+
+#cap-travelling {
+	margin: 140px 0px 0px 100px;
+	@include break(phone) {
+		margin-top: 40px;
+	}
+
+}
+//END OF DISCOVER HOLIDAY IDEAS
+
+//START OF DISCOVER ACTIVITIES
+
+#activities-content-wrap {
+	margin:88px 0px 0px 302px;
+	@include break (tablet) {
+		margin: 105px 0px 0px 214px;
+	}
+	@include break(phone) {
+		margin: 36px 0px 0px -2px;
+    	text-align: center;
+	}
+}
+
+#discover-activities-title {
+	@include break(tablet) {
+
+	}
+}
+#discover-activities-subtitle {
+	font-family: map-get($fonts, robol);
+	color: map-get($colors, grey-text);
+	font-size: 18px; 
+	margin: 30px 0px 0px 30px;
+	@include break(phone) {
+		margin: 10px 0px 0px -2px;
+	}
+
+}
+
+#partner-search-submit {
+	font-family: map-get($fonts, robold);
+	color: white;
+	font-size: 16px;
+	background-color: map-get($colors, hot-pink);
+    margin-left: 5px;
+    border: none; 
+    width: 160px;
+    height: 40px;
+    @include border-radius(20px);
+    @include break(phone) {
+    	width: 280px;
+    	margin: 10px 0px 0px -5px;
+    }
+
+}
+
+#partner-search {
+	font-family: map-get($fonts, robol);
+	font-size:14px;
+	border: 1px solid;
+	border-color: map-get($colors, grey-text);
+	color: map-get($colors, grey-text);
+	width: 242px;
+	height: 40px;
+	@include border-radius(5px);
+	margin: 38px 0px 0px -37px;
+	@include break(phone) {
+    	margin:14px 0px 0px -4px;
+    	width: 282px; 
+    }
+}
+
+
+//END OF DISCOVER
+
+//FOOTER BEGINS
+#footer {
+	border-top: 4px solid;
+	border-color: map-get($colors, hot-pink);
+	margin-top: 100px;
+	@include break(phone){
+		margin-top: 40px;
+	}
+}
+
+#footer-inner-wrap {
+	margin-top: 34px;
+	@include break(phone) {
+		margin-top: 0px;
+	}
+}
+
+#logo-text {
+	font-family: map-get($fonts, robold);
+	color: map-get($colors, hot-pink);
+	font-size: 18px;
+	margin:-3px 0px 0px 2px;
+	@include break(tablet) {
+		margin-left: 40px; 
+	}
+	@include break(phone) {
+		margin: 12px 0px 0px 82px; 
+	}
+}
+
+#company-list {
+	@include break(phone) {
+		margin: 10px 0px 0px 28px;
+	}
+}
+
+.footer-list {
+	list-style-type: none;
+}
+
+.footer-list li {
+	@include break(phone){
+		display:inline-block;
+	
+	}
+
+}
+
+.footer-list li, a {
+	text-decoration: none;
+	margin-bottom: 5px; 
+	@include break(phone) {
+		padding-left: 3px; 
+	}
+
+}
+
+.footer-list li:first-child {
+	font-family: map-get($fonts, montreg);
+	font-size: 14px; 
+	color: black;
+	display: block;
+	@include break(phone) {
+		margin-bottom: 0px;
+	}
+}
+
+.footer-list li:nth-child(2) {
+	margin-top: 15px; 
+	@include break(phone) {
+		margin: 3px 0px 0px -65px; 
+	}
+}
+
+.footer-list li a {
+	font-family: map-get($fonts, montreg);
+	font-size: 12px; 
+	color: map-get($colors, grey-text);
+	display: block;
+    padding-bottom: 5px;
+
+}
+
+#company-list {
+	padding-left: 100px;
+	@include break(tablet) {
+		padding-left: 88px; 
+	}
+}
+
+#partners-list {
+	padding-left: 92px; 
+	@include break(tablet) {
+		padding-left: 102px; 
+	}
+	@include break(phone) {
+		padding-left: 118px; 
+	}
+}
+#made-by {
+	margin-right: 20px; 
+	@include break(tablet) {
+		margin: 5px 24px 0px 0px; 
+	}
+	@include break(phone) {
+		margin: 15px 98px 0px 0px;
+	}
+}
+//FOOTER ENDS
