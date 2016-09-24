@@ -1,0 +1,279 @@
+
+
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../Fonts/HelveticaNeue.woff') format('woff');
+
+}
+
+
+
+/* Page Wrapper */
+
+html {
+	height: 100%;
+	min-height: 800px;
+}
+
+body {
+	margin: 0px;
+	height: 100%;
+	min-height: 800px;
+
+}
+
+
+#pageWrapper{
+	height: 100%;
+	margin:0px;
+	background-image: url('../IMG/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
+/* Nav  */ 
+
+nav{
+	background-image: url("../IMG/backgroundnav.jpg");
+	background-repeat: repeat;
+
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	height: 38px;
+	overflow: hidden;
+}
+
+nav li{
+	float: right;
+	
+}
+
+
+nav li a{
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, verdana;
+	font-size: 14px;
+    padding: 11px 14px;
+    color: rgb(96, 181, 237);
+	text-align: center;
+	text-decoration: none;
+
+
+}
+
+
+nav li a:hover{
+	background-color: rgb(78, 171, 218);
+	color: white;
+}
+
+#Minhas{
+	color: white;
+	border-left: 1px solid rgb(96, 181, 237);
+	border-right: 1px solid rgb(96, 181, 237);
+}
+
+#Minhas a{
+    float: right;
+    color:white;
+    padding-left: 48px;
+    padding-right: 17px;
+    background-image: url("../IMG/flag2.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-position-x: 11px;
+    background-position-y: 6px;
+
+}
+
+#Minhas img{
+    border: 0;
+}
+
+#Ola a{
+	color: white;
+	padding: 10px 22px;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+
+
+/* Form Wrapper */
+
+
+#form_wrapper{
+    position: relative;
+    margin: -306px 0px 0px -280px;
+    top: 50%;
+    left: 50%;
+    width: 560px;
+    height: 612px;
+    background-color: rgba(56, 62,50, .6);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+
+}
+.details_form {
+	display: inline-block;
+	position: relative;
+    margin-top: 8px;
+
+
+}
+
+/*Form Header */
+
+#formHeader{
+	width:100%;
+	height:50px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+#formHeader p{
+	font-family: 'Helvetica Neue', Helvetica, verdana;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
+
+/* Facebook Button */
+#fb{
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 15px;
+	margin-top: 66px;
+	height: 35px;
+    width: 293px;
+    border-radius:4px;
+    border: none;
+    background-image: url("../IMG/facebook_f.jpg"), url("../IMG/facebook_arrow.jpg"), url("../IMG/button_background.jpg");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position-x: 0px, 250px;
+    background-position-y: 0px, center;
+ 
+   
+}
+
+/* bridge */
+
+#bridge{
+	left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    width: 395px;
+    height: 30px;
+}
+#bridge ul{
+	list-style-type: none;
+}
+
+#bridge li{
+	float: left;
+}
+
+#ou{
+	color: gray;
+	margin-top: -6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+hr{
+	width: 135px;
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+/* Sign Up Form */ 
+
+
+
+input{
+	width: 275px;
+	padding:5px;
+	margin:4px;
+	background-color:rgb(15, 15, 15);
+	font-family: 'Helvetica Neue', Helvetica, verdana;
+	color: white;
+	border:2px inset black;
+}
+
+input[type=text]:focus{
+	background-color: rgb(29, 80, 133);
+	border: 2px solid rgb(107, 153, 203);
+	box-shadow: 0 0 10px rgb(107, 153, 203);
+}
+
+input[type=password]:focus{
+	background-color: rgb(29, 80, 133);
+	border: 2px solid rgb(107, 153, 203);
+	box-shadow: 0 0 10px rgb(107, 153, 203);
+
+}
+input[type=checkbox]{
+	width: auto;
+	  }
+
+form span{
+	color:white;
+	font-size:12px;
+	
+}
+
+input[type=submit]{
+	background-image: url("../IMG/submit_button.jpg");
+	background-size: cover;
+	background-repeat: repeat-x;
+	margin-top: 20px;
+    height: 43px;
+    width: 172px;
+    border: none;
+    border-radius: 9px;
+
+}
+
+/* Terms of Use */
+
+.terms_of_use {
+
+	overflow:hidden;
+
+
+
+}
+
+.terms_of_use p {
+	line-height: 18px;
+	margin: 0px;
+	height: 16px;
+	font-family: 'Helvetica Neue', Helvetica, verdana;
+	font-size: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Zazor</title>
+</head>
+
+
+<body>
+<div id="wrapper">
+
+	<!--Header-->
+	<header>
+
+		<!--PhoneNumber-->
+		<div class="hat header_text">
+			<img src="IMG/PhoneIcon.jpg" alt="phone" class='float_left' id="phoneicon">
+
+			<p class='float_left font'>(044)123-4567 (044)578-89-10</p>
+
+			<!--Login-->
+			<div class="float_left" id="login">
+				<img src="IMG/personicon2.jpg" alt="personicon" class="float_left" id="personicon">
+
+				<form class="float_left" method="post">
+					<input type="text" name="login" placeholder="login">
+					<input type="password" name="password" placeholder="password">
+					<input class="no_style" type="submit" value="login">
+				</form>
+
+				<ul class="float_left standard_list reg_pas">
+					<li><a href="#">Registration</a></li>
+					<li><a href="#" id="forgot">Forgot your password?</a></li>
+				</ul>
+
+			</div>
+
+			<!--Contact Button-->
+
+			<button type=submit>
+
+			</button>
+
+		</div>
+
+
+		<!--BigPicture-->
+
+		<figure>
+			<img src="IMG/figure1.jpg" alt="main_picture" class="clearfix:after">
+		</figure>
+		<!--Nav-->
+
+
+		<nav class="standard_list mainnav">
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Deliveries</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li id="shopping_cart"><span class="items">Items: </span><span class="count">0</span></li>
+				<li><span class="items2">Cost: </span><span class="count">0.00 grn</span></li>
+			</ul>
+
+
+		</nav>
+
+	</header>
+
+	<div class="wrapper">
+
+
+		<!--BEGINNING OF FLOAT BOXES-->
+		<div class="clearfix wrapper">
+			<div class="floatbox float_left one">
+				<header>
+					<p id="head_text">Search for automobiles</p>
+
+					<p id="discs">Disks:</p>
+
+					<p id="tires">Tires:</p>
+				</header>
+
+				<form action="#" id="form1" method="get">
+					<div class="form_wrap float_right" id="wrap1">
+						<label class="stan_label" for="brand2">Brand:</label>
+						<select name="brand2" id="brand2">
+							<option value="empty" selected>....</option>
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="fiat">Fiat</option>
+							<option value="audi">Audi</option>
+						</select>
+						<label class="stan_label" for="model2">Model:<br><span class="small_let">of Car</span></label>
+						<select name="model2" id="model2">
+							<option value="empty" selected>....</option>
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="fiat">Fiat</option>
+							<option value="audi">Audi</option>
+						</select>
+						<label class="stan_label" for="year2">Year:<br><span class="small_let">of Release</span></label>
+						<select name="year2" id="year2">
+							<option value="empty" selected>....</option>
+							<option value="1990">1990</option>
+							<option value="1991">1991</option>
+							<option value="1992">1992</option>
+							<option value="1993">1993</option>
+						</select>
+						<label class="stan_label" for="equipment2">Equipment:</label>
+						<select name="equipment2" id="equipment2">
+							<option value="empty" selected>....</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+
+					</div>
+
+					<div class="form_wrap float_left" id=wrap2>
+						<div id="form2">
+							<label class="stan_label" for="brand">Brand:</label>
+							<select name="brand" id="brand">
+								<option value="empty" selected>....</option>
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+							<label class="stan_label" for="model">Model:<br><span class="small_let">of Car</span></label>
+							<select name="model" id="model">
+								<option value="empty" selected>....</option>
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+							<label class="stan_label" for="year">Year:<br><span class="small_let">of Release</span></label>
+							<select name="year" id="year">
+								<option value="empty" selected>....</option>
+								<option value="1990">1990</option>
+								<option value="1991">1991</option>
+								<option value="1992">1992</option>
+								<option value="1993">1993</option>
+							</select>
+							<label class="stan_label" for="equipment">Equipment:</label>
+							<select name="equipment" id="equipment">
+								<option value="empty" selected>....</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+
+
+						</div>
+
+						<button type="submit" class="float_right" id="box1_button" form="form1" value="search">search...</button>
+					</div>
+
+
+				</form>
+
+
+			</div>
+
+			<div class="floatbox float_left two">
+				<header><p class="float_left">Search for tires</p></header>
+
+
+				<form action="#" id="size" method="get">
+					<div id="size_wrap">
+						<label class="stan_label" for="size1">Size:</label>
+						<select name="size1" id="size1">
+							<option value="145" selected>145</option>
+						</select>
+
+						<p> / </p>
+						<select name="size">
+							<option value="145" selected>145</option>
+						</select>
+					</div>
+					<div id="r_and_seasons">
+						<div id="r">
+							<label class="stan_label" for="r1">R:</label>
+							<select name="r1" id="r1">
+								<option value="12" selected>12</option>
+							</select>
+						</div>
+						<div id="season">
+							<label class="stan_label">Season:</label>
+							<label class="stan_label" id="summer"><input type="checkbox" name="season" value="summer">summer</label>
+							<label class="stan_label" id="winter"><input type="checkbox" name="season" value="winter">winter</label>
+							<label class="stan_label" id="allseason"><input type="checkbox" name="season"
+							                                                value="allseasons">allseasons</label>
+						</div>
+					</div>
+				</form>
+				<button type="submit" form="size" id="special_button" value="search">search...</button>
+			</div>
+		
+
+			
+
+				<div class="floatbox float_left three">
+				<form action="#" id="diameter" method="get">
+
+				<header><p id="three_head">Search for discs</p></header>
+				<div class="float_left" id="disc_search">
+					<label class="stan_label" for="diameter1">Diameter<span class="small_let">of disc</span></label>
+					<select class="disc_search_box" name="diameter1" id="diameter1">
+						<option value="14" selected>14</option>
+					</select>
+					<br>
+					<label class="stan_label" for="num_support_holes">Number<br><span class="small_let">of supports:</span></label>
+					<select class="disc_search_box" name="num_support_holes" id="num_support_holes">
+						<option value="3" selected>3</option>
+					</select><br>
+					<label class="stan_label" for="diam_support_holes">Diameter<br><span class="small_let">of supports:</span></label>
+					<select class="disc_search_box" name="diam_support_holes" id="diam_support_holes">
+						<option value="12" selected>12</option>
+					</select>
+
+				</div>
+
+				<div>
+					<div id="dco">
+						<label class="stan_label" id="dco_head">DCO<br><span class="small_let">(diameter <br>of central support):</span></label><br>
+						<select class="dco_box" id="dco_select" name="dco">
+							<option value="12" selected>12</option>
+						</select><br>
+
+						<label class="stan_label" id="et_head">ET<br><span
+								class="small_let">(disc crash):</span></label><br>
+						<select class="dco_box" id="disk_crash_select" name="disk_crash">
+							<option value="3" selected>3</option>
+						</select>
+					</div>
+				</div>
+			</form>
+			<button value="search" form="diameter">search...</button>
+		</div>
+		</div>
+	</div>
+	<!--END OF FLOATING BOXED-->
+	<!--SectionCatalogProducts[Aside]-->
+	<div class="clearfix" id="asides_and_main">
+		<aside class="left_aside list_aside float_left head_class" id=left_aside>
+			<h6 class="font" id="catalog">Catalog of Products</h6>
+
+			<h6 class="font" id="tires2">Tires</h6>
+			<ul>
+				<li><a class="font" href="#">Brand 1</a></li>
+				<li><a class="font" href="#">Brand 2</a></li>
+				<li><a class="font" href="#">Brand 3</a></li>
+				<li><a class="font" href="#">Brand 4</a></li>
+			</ul>
+
+			<h6 class="font" id="discs2">Discs</h6>
+
+			<ul>
+				<li><a class="font" href="#">Brand 1</a></li>
+				<li><a class="font" href="#">Brand 2</a></li>
+				<li><a class="font" href="#">Brand 3</a></li>
+				<li><a class="font" href="#">Brand 4</a></li>
+			</ul>
+
+
+			<h6 class="Font" id="bolts">Bolts</h6>
+			<ul>
+				<li><a class="font" href="#">Brand 1</a></li>
+				<li><a class="font" href="#">Brand 2</a></li>
+				<li><a class="font" href="#">Brand 3</a></li>
+				<li><a class="font" href="#">Brand 4</a></li>
+			</ul>
+
+
+		</aside>
+		<aside class="right_aside float_right head_class" id="right_aside">
+			<h6 class="font" id="brands">Brands</h6>
+
+			<h6 class="font" id="right_tires">Tires</h6>
+
+			<form action="#" class="font" id="tires_form" method="get">
+				<input type="checkbox" name="brand1">Brand 1<br>
+				<input type="checkbox" name="brand2">Brand 2<br>
+				<input type="checkbox" name="brand2">Brand 3
+				<h6 class="font" id="right_discs">Disks</h6>
+
+				<div class="font" id="discs_form">
+					<input type="checkbox" name="brand1">Brand 1<br>
+					<input type="checkbox" name="brand2">Brand 2<br>
+					<input type="checkbox" name="brand2">Brand 3
+				</div>
+			</form>
+			<button value="submit" form="tires_form" class="font" id="right_button">Choose</button>
+		</aside>
+		<main>
+			<div id="float_boxes">
+				<figure class="fig">
+					<h5 class="font">Good Year</h5>
+
+					<p class="font">Ultra Grip Extreme</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">90.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Nokian</h5>
+
+					<p class="font">Hakkapeliitta R</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">115.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Hankook</h5>
+
+					<p class="font">K 708 155/65 R14</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">393.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Goodyear</h5>
+
+					<p class="font">Ultra Grip Extreme</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">90.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Nokian</h5>
+
+					<p class="font">Hakkapeliitta R</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">115.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Hankook</h5>
+
+					<p class="font">K 708 155/65 R14</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">393.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Goodyear</h5>
+
+					<p class="font">Ultra Grip Extreme</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">90.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Nokian</h5>
+
+					<p class="font">Hakkapeliitta R</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">115.00 grn</figcaption>
+				</figure>
+				<figure class="fig">
+					<h5 class="font">Hankook</h5>
+
+					<p class="font">K 708 155/65 R14</p>
+					<img src="IMG/tire.jpg" alt="tire">
+					<figcaption class="figcap">393.00 grn</figcaption>
+				</figure>
+
+			</div>
+
+		</main>
+	</div>
+
+
+	<!--BrandLogoes[Figure]-->
+	<div class="logos standard_list">
+		<ul>
+			<li><a class="custom_a" href="#">&lt; &lt;</a></li>
+			<li><a href="#"> &lt;1...</a></li>
+			<li><a href="#">2...</a></li>
+			<li><a href="#">3...</a></li>
+			<li><a class="custom_a" href="#">4&lg;</a></li>
+			<li><a href="#">&gt; &lg;</a></li>
+
+
+		</ul>
+
+
+	</div>
+
+</div>
+<!--Footer-->
+<footer class="standard_list">
+	<ul>
+		<li><a class="font" href="#">About Us</a></li>
+		<li><a href="#">Delivery</a></li>
+		<li><a href="#">Articles</a></li>
+		<li><a href="#" id="sans">Contact Us</a></li>
+
+	</ul>
+	<p id="copyright">Site Created by &copy; Global Vision</p>
+</footer>
+
+
+</body> 
+
+
+
